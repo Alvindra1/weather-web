@@ -17,7 +17,7 @@ app.get("/weather", async (req, res) => {
   try {
     const { location } = req.query;
     const weatherRes = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.WEATHERSHITAPI_TOKEN}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.WEATHERSAPI_TOKEN}&units=metric`
     );
     const data = await weatherRes.json();
     res.json(data);
