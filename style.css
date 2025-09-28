@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("assets/light_blue_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  /* border-radius: 20px; */
+}
+
+header input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+header button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #4a90e2;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#web-logo {
+    width: 40px ;
+    /* margin: 0%; */
+    /* display: flexbox; */
+    /* display: absolute; */
+    /* margin-left: 0px; */
+    left: 2px;
+}
+
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+
+
+#weatherPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background :  rgb(0, 149, 255); */
+  background: rgb(0, 0,0, 0.05);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+#weatherIconBox {
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 191, 255, 0.11);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 4000px;
+}
+
+#weatherIcon {
+  width: 350px;
+  height: 350px;
+}
+
+#poemPanel {
+  flex: 1;
+  padding: 30px;
+  /* background: rgba(10, 36, 148, 0.85); */
+  /* backface-visibility: 3; */
+  background:rgba(0, 0, 0, 0.12) ;
+  color: #cacaca;
+  border-radius: 15px;
+  overflow-y: auto;
+  margin: 20px;
+}
+
+#poem-title {
+    background-color: #95c3f8;
+    /* text-align: center; */
+}
+#location-header {
+  background-color:  rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#poemLocation {
+  background-color:  rgba(0, 0, 0, 0.1);
+  /* margin: ; */
+  padding: 10px;
+  border-radius: 20px;
+  color: lightgray
+}
+
+#poemOutput {
+    text-align: center ;
+    font: kenac;
+    color: rgb(151, 215, 254);
+    
+    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Weather Poem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img id="web-logo" src="assets/web-logo.png" alt="weather-logo">
+    
+    <input class="searchbar" type="text" id="locationInput" placeholder="Enter a city..." />
+    <button class="searchbar" onclick="getWeather()">Search</button>
+    
+  </header>
+  
+  <main>
+    <section id="weatherPanel">
+      <div id="weatherIconBox">
+        <img id="weatherIcon" src="assets/web-logo.png" alt="Weather icon"/>
+      </div>
+      <h2 id="weatherCondition"></h2>
+      <p id="temperature"></p>
+  
+    </section>
+
+    <section id="poemPanel">
+      <div id="location-header">
+        <h2 id="poemLocation">—</h2>
+      <!-- <h2 id="locationInput"></h2> -->
+      </div>
+      <h2 id="poemOutput">Search a city...</h2>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
